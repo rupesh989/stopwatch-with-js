@@ -3,7 +3,7 @@ let stopBtn = document.getElementById('stopBtn');
 let startBtn = document.getElementById('startBtn');
 let resetBtn = document.getElementById('resetBtn');
 
-let msec = 0o0;
+let msec = 0o0; //use 0 or 0o0 
 let secs = 0o0;
 let mins = 0o0;
 
@@ -21,7 +21,5 @@ stopBtn.addEventListener('click', function(){
 });
 
 resetBtn.addEventListener('click', function(){
-    clearInterval(timerId);
-    timerDisplay.innerHTML = `00 : 00 : 00`;
-    msec = secs = mins = 0o0;
+
 });
