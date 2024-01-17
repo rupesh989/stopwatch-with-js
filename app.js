@@ -1,20 +1,23 @@
 let timerDisplay = document.querySelector('.timerDisplay');
-let stopBtn = document.getElementById('stopBtn');
-let startBtn = document.getElementById('startBtn');
-let resetBtn = document.getElementById('resetBtn');
+let stopBtn = document.querySelector('#stopBtn');
+let startBtn = document.querySelector('#startBtn');
+let resetBtn = document.querySelector('#resetBtn');
 
-// let msec = 00;
-// let secs = 00;
-// let mins = 00;
+let msec = 0;
+let secs = 0;
+let mins = 0;
 
 let timerId = null;
 
-startBtn.addEventListener('click', function(){
-    if(timerId !== null){
-        clearInterval(timerId);
+
+startBtn.addEventListener("click",()=>{
+// console.log("Start btn works!");
+if(timerId !== null){
+           clearInterval(timerId);
     }
-    timerId = setInterval(startTimer, 10);
-});
+       timerId = setInterval(startTimer, 10);
+ });
+
 
 stopBtn.addEventListener('click', function(){
     clearInterval(timerId);
@@ -23,7 +26,7 @@ stopBtn.addEventListener('click', function(){
 resetBtn.addEventListener('click', function(){
     clearInterval(timerId);
     timerDisplay.innerHTML = `00 : 00 : 00`;
-    // msec = secs = mins = 00;
+    msec = secs = mins = 0;
 });
 
 function startTimer(){
