@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(125, 228, 233, 0.7);
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -16,13 +16,13 @@ body{
 }
 
 .stopwatch{
-    background-color: rgba(48, 41, 41, 0.9);
+    background-color: rgba(11, 7, 21, 0.9);
     padding: 20px 24px;
     border-radius: 10px;
 }
 
 .timerDisplay{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
 }
 
@@ -30,12 +30,36 @@ body{
     margin-top: 20px;
 }
 
-.btn{
-    font-size: 20px;
+.reset-btn{
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(69, 27, 220);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.start-btn{
+    font-size: 25px;
     background: none;
     border: none;
     color: #fff;
-    background-color: var(--clr);
+    background-color: rgb(5, 146, 5);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.stop-btn{
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: rgb(238, 10, 10);
     padding: 12px 24px;
     margin-inline: 12px;
     border-radius: 8px;
